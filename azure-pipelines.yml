@@ -55,7 +55,7 @@ stages:
   - stage: Deploy
     pool:
       vmImage: ubuntu-18.04
-    enviroment: dev
+    environment: dev
     variables:
     - group: Release
     strategy: 
