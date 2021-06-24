@@ -76,7 +76,7 @@ stages:
     pool:
       vmImage: ubuntu-18.04
     environment: dev
-    #condition: eq(variables['Build.Reason'], 'Schedule')
+    condition: eq(variables['Build.Reason'], 'Schedule')
     variables:
     - group: Release
     strategy:
