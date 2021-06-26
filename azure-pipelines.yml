@@ -69,7 +69,7 @@ stages:
     - task: CopyFiles@2
       displayName: Copy dacpac file to staging directory
       inputs:
-        contents: >
+        contents: |
           Tailspin.SpaceGame.Database/bin/**/*.dacpac
         targetFolder: $(Build.StagingDirectory)
     - task: PublishBuildArtifacts@1
@@ -164,7 +164,7 @@ stages:
   dependsOn:
   - DBAVerificationScript
   - DBAVerificationApply
-  condition: >
+  condition: |
     and
 
     (
